@@ -48,5 +48,17 @@ insert into rol_permiso (id_rol, permiso_id) values
 (1, 4); -- Eliminar
 
 -- asignar permisos al Empleado (id_rol = 2), solo leer
-insert into rol_permiso (id_rol, permiso_id) values
-(2, 2);
+INSERT INTO rol_permiso (id_rol, permiso_id) VALUES 
+(2, 2);
+
+-- insertar usuario Empleado (contraseña 123456)
+INSERT INTO usuarios (nombre, email, clave, id_rol)
+VALUES 
+('Admin', 'admin@gmail.com', '$2b$10$wLyuMd5mP.D5YekcUa2uSOQIRXvXFyKampz3go/ryHgHU1ihTtioa6',1);
+-- la contraseña es: 1
+
+-- insertar usuario Empleado (contraseña 123456)
+INSERT INTO usuarios (nombre, email, clave, id_rol)
+VALUES 
+('Admin', 'admin@gmail.com', '$2b$10$wLyuMd5mP.D5YekcUa2uSOQIRXvXFyKampz3go/ryHgHU1ihTtioa6',1);
+-- la contraseña es: 1
